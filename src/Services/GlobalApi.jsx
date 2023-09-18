@@ -1,11 +1,10 @@
 import axios from "axios";
 
-const movieBaseUrl= "https://api.themoviedb.org/3"
-const api_key = '6f918cb5d57a8db9c850b996f0be1240'
+const movieBaseUrl= BaseURl ;
+const api_key = api_key
 
-const movieByGenreBaseURL='https://api.themoviedb.org/3/discover/movie?api_key=6f918cb5d57a8db9c850b996f0be1240';
+const movieByGenreBaseURL= BaseUrlGenre;
 
-// https://api.themoviedb.org/3/movie/550?api_key=6f918cb5d57a8db9c850b996f0be1240
 const getTrendingVideos=axios.get(movieBaseUrl+
     "/trending/all/day?api_key="+api_key);
 
